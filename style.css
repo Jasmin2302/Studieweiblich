@@ -125,10 +125,11 @@ body {
   margin-bottom: 15px;
 }
 .post img {
-  width: 100%;
-  max-width: 500px;
+  width: auto;
+  max-width: 85%;
   border-radius: 10px;
   height: auto;
+  max-height: 60vh;
   display: block;
   margin: 0 auto;
 }
@@ -380,4 +381,5 @@ body {
   cursor: not-allowed !important;
   opacity: 0.7;
 }
+
 
