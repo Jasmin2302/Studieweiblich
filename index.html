@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Instastim</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Hauptbildschirm -->
+  <div class="screen active" id="homeScreen">
+    <div class="topbar">
+      Instastim
+      <span id="uploadText" style="margin-left: 10px; display: none;">Lädt hoch…</span>
+      <div id="heartFly" style="position: absolute; top: 45%; left: 80%; transform: translate(-50%, -50%); font-size: 36px; display: none;">❤️</div>
+      <div class="upload-bar" id="topUploadBar" style="position:absolute; bottom:0; left:0; width:100%; display:none;">
+        <div class="upload-fill" id="uploadFill"></div>
+      </div>
+    </div>
+
+    <div class="feed-thread" id="feedPosts">
+
+      <!-- Post 1 -->
+      <div class="post">
+        <div style="display: flex; align-items: center; margin-bottom: 10px;">
+          <img src="Profilbild.png" style="width: 30px; height: 30px; border-radius: 50%; margin-right: 10px;">
+          <strong>lena.travels</strong>
+        </div>
+        <img src="IMG_1592.jpeg" alt="Post 1">
+        <div class="meta-container">
+          <div class="likes">❤️ 18 Likes</div>
+          <div class="comments">
+            <strong>lena.travels</strong> Sonnenuntergang unter den Bäumen 🌅
+          </div>
+          <div class="comment-input">
+            <input type="text" placeholder="Kommentiere etwas…" />
+            <button>Posten</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Post 2 -->
+      <div class="post">
+        <div style="display: flex; align-items: center; margin-bottom: 10px;">
+          <img src="Profilbild.png" style="width: 30px; height: 30px; border-radius: 50%; margin-right: 10px;">
+          <strong>max.foodie</strong>
+        </div>
+        <img src="IMG_1591.jpeg" alt="Post 2">
+        <div class="meta-container">
+          <div class="likes">❤️ 23 Likes</div>
+          <div class="comments"><strong>max.foodie</strong> Brunch Goals 🥞🍓</div>
+          <div class="comment-input">
+            <input type="text" placeholder="Kommentiere etwas…" />
+            <button>Posten</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Post 3 -->
+      <div class="post">
+        <div style="display: flex; align-items: center; margin-bottom: 10px;">
+          <img src="Profilbild.png" style="width: 30px; height: 30px; border-radius: 50%; margin-right: 10px;">
+          <strong>julia.nature</strong>
+        </div>
+        <img src="IMG_1590.jpeg" alt="Post 3">
+        <div class="meta-container">
+          <div class="likes">❤️ 40 Likes</div>
+          <div class="comments"><strong>julia.nature</strong> Mein Lieblingsplatz 🌿💧</div>
+          <div class="comment-input">
+            <input type="text" placeholder="Kommentiere etwas…" />
+            <button>Posten</button>
+          </div>
+        </div>
+      </div>
+
+    </div> 
+
+    <div class="navbar">
+      <button onclick="showScreen('home')">🏠</button>
+      <button onclick="goToUpload()">➕</button>
+      <button disabled>🔔</button>
+    </div>
+  </div>
+
+  <!-- Bildauswahl -->
+  <div class="screen" id="selectImageScreen">
+    <div class="topbar">
+      <span class="back-btn" onclick="showScreen('home')">←</span>
+      <span style="margin-left: 10px;">Neuer Beitrag</span>
+      <span style="margin-left:auto; color: #3897f0; cursor:pointer;" onclick="goToCaption()">Weiter</span>
+    </div>
+
+    <!-- Großes Vorschaubild -->
+    <div class="main-preview-container">
+      <img id="mainPreview" class="main-preview" src="Foto_weiblich.png" />
+    </div>
+
+    <!-- Galerie mit Gitter -->
+    <div class="gallery-grid">
+      <div class="camera-icon" onclick="alert('Kamera nicht verfügbar im Demo!')">📷</div>
+      <img src="Foto_weiblich.png" onclick="selectImage(this, 'Foto_weiblich.png')">
+      <img src="Foto_männlich.png" onclick="selectImage(this, 'Foto_männlich.png')">
+      <img src="graues_bild.jpg">
+      <img src="graues_bild2.jpg">
+      <img src="graues_bild3.jpg">
+      <!-- Du kannst hier weitere Bilder hinzufügen -->
+    </div>
+  </div>
+
+  <!-- Bildunterschrift -->
+  <div class="screen" id="captionScreen">
+    <div class="topbar">
+      <span class="back-btn" onclick="showScreen('select')">←</span>
+      <span style="margin-left: 10px;">Bildunterschrift</span>
+    </div>
+
+    <div class="caption-wrap">
+      <img id="previewCaptionImage" />
+
+      <div class="editor-col">
+        <div class="editor-row">
+          <textarea id="caption" rows="4" placeholder="Schreibe eine Bildunterschrift..."></textarea>
+
+          <!-- Hashtag-Seitenleiste (Buttons NEBEN der Textbox) -->
+          <div class="hashtag-sidebar">
+            <button class="hashtag" data-tag="#urlaub">#urlaub</button>
+            <button class="hashtag" data-tag="#nature">#nature</button>
+            <button class="hashtag" data-tag="#friends">#friends</button>
+            <button class="hashtag" data-tag="#food">#food</button>
+            <button class="hashtag" data-tag="#travel">#travel</button>
+            <button class="hashtag" data-tag="#sunset">#sunset</button>
+          </div>
+        </div>
+
+        <button class="post-btn" onclick="uploadPost()">Posten</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
