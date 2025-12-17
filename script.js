@@ -33,7 +33,10 @@ function goToCaption() {
     return;
   }
   const prev = document.getElementById('previewCaptionImage');
-  if (prev) prev.src = selectedImage;
+  if (prev) {
+    prev.src = selectedImage;
+    prev.style.display = 'block';
+  }
   showScreen('caption');
 }
 
@@ -821,3 +824,4 @@ document.addEventListener('DOMContentLoaded', () => {
   const cond = CONDITIONS[idx];
   applyCondition(cond);
 });
+
