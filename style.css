@@ -26,7 +26,7 @@ body {
 .post-thread, .feed-thread {
   flex: 1;
   overflow-y: auto;
-  padding: 10px;
+  padding: 8px;
 }
 .navbar {
   height: 50px;
@@ -380,3 +380,4 @@ body {
   cursor: not-allowed !important;
   opacity: 0.7;
 }
+
