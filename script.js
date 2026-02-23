@@ -549,12 +549,16 @@ function applyCondition(cond) {
     const post = posts[index];
     if (!post) return;
 
-    const imgs = post.querySelectorAll('img');
-    const contentImg = imgs[1]; // [0] = Profil, [1] = eigentlicher Post
+      const imgs = post.querySelectorAll('img');
+const profileImg = imgs[0];
+const contentImg = imgs[1];
 
-    if (contentImg) {
-      contentImg.src = cfg.img;
-    }
+if (profileImg && cfg.profileImg) {
+  profileImg.src = cfg.profileImg;
+}
+if (contentImg) {
+  contentImg.src = cfg.img;
+}
 
     const likesDiv = post.querySelector('.likes');
     if (likesDiv) {
@@ -848,5 +852,6 @@ document.addEventListener('DOMContentLoaded', () => {
   const cond = CONDITIONS[idx];
   applyCondition(cond);
 });
+
 
 
