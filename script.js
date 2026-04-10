@@ -78,13 +78,24 @@ function formatLikes(num) {
 
 const CONDITIONS = [
   // 1) neutral, wenig Likes, Exklusion
-  {
-    id: "neutral_wenig_exklusion",
-    style: "neutral",
-    likesLevel: "wenig",
-    social: "exklusion",
-    feedPosts: [
-      {
+{
+  id: "neutral_wenig_exklusion",
+  style: "neutral",
+  likesLevel: "wenig",
+  social: "exklusion",
+  feedPosts: [
+
+{
+      username: "elara_01",
+profileImg: "profilbildnatur2.png",
+      img: "naturbild.png",
+      likes: 73,
+	caption: "good vibes✨",
+      comments: [
+  { user: "travel.leo", text: "Was für eine Aussicht 😍" }
+]
+    },
+    {
       username: "lena.travels",
 profileImg: "Profilbild1NATUR.png",
       img: "IMG_1592.jpeg",
@@ -104,6 +115,16 @@ profileImg: "Profilbild2NATUR.png",
         { user: "jonas.reist", text: "Brunch Goals" }
       ]
     },
+{
+username: "Franz0609",
+profileImg: "profilbildnatur1.png",
+      img: "niagara.png",
+      likes: 73,
+      caption: "America: first stop - Niagara falls",
+      comments: [
+        { user: "Andrea.kxd", text: "Ich wollte auch schon immer dort hin!" }
+      ]
+    },
     {
       username: "julia.nature",
       img: "IMG_1590.jpeg",
@@ -112,198 +133,279 @@ profileImg: "Profilbild3NATUR.png",
       caption: "Mein Lieblingsplatz 🌿💧",
       comments: [
         { user: "maria.lifestyle", text: "Was für ein Ort! 🌿" }
-        ]
-      }
-    ],
-    selfMaxLikes: 30,
-    selfComments: [
-      { name: "lisa.re", text: "wow" }
-    ],
-    selfCommentsCount: 1
-  },
+      ]
+    }
+  ],
+  selfMaxLikes: 30,
+  selfComments: [
+    { name: "lisa.re", text: "wow" }
+  ],
+  selfCommentsCount: 1
+},
 
-  // 2) neutral, viel Likes, Exklusion
-  {
-    id: "neutral_viel_exklusion",
-    style: "neutral",
-    likesLevel: "viel",
-    social: "exklusion",
-    feedPosts: [
-      {
-        username: "lena.travels",
-        profileImg: "Profilbild1NATUR.png",
-        img: "IMG_1592.jpeg",
-        likes: 307,
-        caption: "Sonnenuntergang unter den Bäumen 🌅",
-        comments: [
-          { user: "anna.smile",  text: "Traumhaftes Licht 🌅" },
-          { user: "paul.photo",  text: "Mega Stimmung!" },
-          { user: "laura.life",  text: "Ich liebe solche Farben 😍" },
-          { user: "sofia.loves", text: "Wunderschönes Bild ❤️" },
-          { user: "felix.food",  text: "Da will man sofort hin!" },
-          { user: "carla.dreams",text: "So schön eingefangen!" }
-        ]
-      },
-      {
-        username: "max.foodie",
-        profileImg: "Profilbild2NATUR.png",
-        img: "IMG_1591.jpeg",
-        likes: 230,
-        caption: "Brunch Goals 🥞🍓",
-        comments: [
-          { user: "ben.adventures", text: "Das sieht köstlich aus 😋" },
-          { user: "tina.sunny",     text: "Wo gibt’s das?!" },
-          { user: "jonas.reist",    text: "Brunch Goals 🥞" },
-          { user: "nico.fitness",   text: "Cheat Day approved 😅" },
-          { user: "lena.travels",   text: "Ich liebe Pancakes 😍" }
-        ]
-      },
-      {
-        username: "julia.nature",
-        profileImg: "Profilbild3NATUR.png",
-        img: "IMG_1590.jpeg",
-        likes: 1300,
-        caption: "Mein Lieblingsplatz 🌿💧",
-        comments: [
-          { user: "maria.lifestyle", text: "Was für ein Ort! 🌿" },
-          { user: "leo.art",         text: "Natur pur 😍" },
-          { user: "tina.sunny",      text: "Ich höre die Vögel zwitschern 🕊️" },
-          { user: "jonas.reist",     text: "Da würde ich jetzt gerne spazieren!" },
-          { user: "carla.dreams",    text: "So beruhigend ✨" },
-          { user: "anna.smile",      text: "Deine Bilder sind immer so schön!" },
-          { user: "paul.photo",      text: "Perfekter Moment!" }
-        ]
-      }
-    ],
-    selfMaxLikes: 30,
-    selfComments: [
-      { name: "lisa.re", text: "wow" }
-    ],
-    selfCommentsCount: 1
-  },
+// 2) neutral, viel Likes, Exklusion  👉 mit deiner LANGE Kommentarliste
+{
+  id: "neutral_viel_exklusion",
+  style: "neutral",
+  likesLevel: "viel",
+  social: "exklusion",
+  feedPosts: [
+{
+      username: "elara_01",
+profileImg: "profilbildnatur2.png",
+      img: "naturbild.png",
+      likes: 639,
+	caption: "good vibes✨",
+      comments: [
+  { user: "travel.leo", text: "Was für eine Aussicht 😍" },
+  { user: "explore.julia", text: "Ich will sofort dahin 🥹" },
+  { user: "nature.tom", text: "Einfach pure Ruhe 💙" },
+  { user: "wander.lena", text: "Das sieht aus wie ein Traum ✨" },
+  { user: "photo.max", text: "Unglaubliches Licht 📸🔥" },
+  { user: "adventure.sara", text: "Perfekter Spot zum Abschalten 🌿" }
+]
+    },
+    {
+      username: "lena.travels",
+profileImg: "Profilbild1NATUR.png",      
+img: "IMG_1592.jpeg",
+      likes: 307,
+      caption: "Sonnenuntergang unter den Bäumen 🌅",
+      comments: [
+        { user: "anna.smile",  text: "Traumhaftes Licht 🌅" },
+        { user: "paul.photo",  text: "Mega Stimmung!" },
+        { user: "laura.life",  text: "Ich liebe solche Farben 😍" },
+        { user: "sofia.loves", text: "Wunderschönes Bild ❤️" },
+        { user: "felix.food",  text: "Da will man sofort hin!" },
+        { user: "carla.dreams",text: "So schön eingefangen!" }
+      ]
+    },
+    {
+      username: "max.foodie",
+profileImg: "Profilbild2NATUR.png",
+      img: "IMG_1591.jpeg",
+      likes: 230,
+      caption: "Brunch Goals 🥞🍓",
+      comments: [
+        { user: "ben.adventures", text: "Das sieht köstlich aus 😋" },
+        { user: "tina.sunny",     text: "Wo gibt’s das?!" },
+        { user: "jonas.reist",    text: "Brunch Goals 🥞" },
+        { user: "nico.fitness",   text: "Cheat Day approved 😅" },
+        { user: "lena.travels",   text: "Ich liebe Pancakes 😍" }
+      ]
+    },
+{
+      username: "Franz0609",
+profileImg: "profilbildnatur1.png",
+      img: "niagara.png",
+      likes: 639,
+      caption: "America: first stop - Niagara falls",
+      comments: [
+  { user: "Andrea.kxd", text: "Ich wollte auch schon immer dort hin!" },
+  { user: "explore.maya", text: "Steht ganz oben auf meiner Bucket List ✈️" },
+  { user: "urban.nico", text: "Mega Aufnahme! 🔥" },
+  { user: "nature.sophie", text: "Diese Wassermassen sind einfach beeindruckend 💙" },
+  { user: "wanderlust.jan", text: "Da bekommt man direkt Fernweh 😍" },
+  { user: "photography.elias", text: "Perfektes Timing mit dem Licht! 📸✨" }
+]
+    },
+    {
+      username: "julia.nature",
+profileImg: "Profilbild3NATUR.png",
+      img: "IMG_1590.jpeg",
+      likes: 1300, // 1,3k
+      caption: "Mein Lieblingsplatz 🌿💧",
+      comments: [
+        { user: "maria.lifestyle", text: "Was für ein Ort! 🌿" },
+        { user: "leo.art",         text: "Natur pur 😍" },
+        { user: "tina.sunny",      text: "Ich höre die Vögel zwitschern 🕊️" },
+        { user: "jonas.reist",     text: "Da würde ich jetzt gerne spazieren!" },
+        { user: "carla.dreams",    text: "So beruhigend ✨" },
+        { user: "anna.smile",      text: "Deine Bilder sind immer so schön!" },
+        { user: "paul.photo",      text: "Perfekter Moment!" }
+      ]
+    }
+  ],
+  selfMaxLikes: 30,
+  selfComments: [
+    { name: "lisa.re", text: "wow" }
+  ],
+  selfCommentsCount: 1
+},
 
-  // 3) neutral, wenig Likes, Inklusion
-  {
-    id: "neutral_wenig_inklusion",
-    style: "neutral",
-    likesLevel: "wenig",
-    social: "inklusion",
-    feedPosts: [
-      {
-        username: "lena.travels",
-        profileImg: "Profilbild1NATUR.png",
-        img: "IMG_1592.jpeg",
-        likes: 18,
-        caption: "Sonnenuntergang unter den Bäumen 🌅",
-        comments: [
-          { user: "paul.photo", text: "Mega Stimmung!" }
-        ]
-      },
-      {
-        username: "max.foodie",
-        profileImg: "Profilbild2NATUR.png",
-        img: "IMG_1591.jpeg",
-        likes: 23,
-        caption: "Brunch Goals 🥞🍓",
-        comments: [
-          { user: "jonas.reist", text: "Brunch Goals" }
-        ]
-      },
-      {
-        username: "julia.nature",
-        profileImg: "Profilbild3NATUR.png",
-        img: "IMG_1590.jpeg",
-        likes: 40,
-        caption: "Mein Lieblingsplatz 🌿💧",
-        comments: [
-          { user: "maria.lifestyle", text: "Was für ein Ort! 🌿" }
-        ]
-      }
-    ],
-    selfMaxLikes: 300,
-    selfComments: [
-      { name: "lisa.re",      text: "Wow, du strahlst! 😍" },
-      { name: "_mariaaa_",    text: "Wunderschönes Bild!" },
-      { name: "leon__",       text: "Du siehst toll aus 🔥" },
-      { name: "Julia.flr",    text: "Traumhafte Aussicht!" },
-      { name: "hannes98",     text: "Richtig cool" },
-      { name: "svenja.photo", text: "So ein schönes Lächeln!" },
-      { name: "luisa.reist",  text: "Arizona steht dir gut 😄" },
-      { name: "martin.lk",    text: "Wo seid ihr genau gewesen?" },
-      { name: "lara123",      text: "Ich will auch dahin 😍" },
-      { name: "franz.x",      text: "Mega Bild!" }
-    ],
-    selfCommentsCount: 8
-  },
+// 3) neutral, wenig Likes, Inklusion
+{
+  id: "neutral_wenig_inklusion",
+  style: "neutral",
+  likesLevel: "wenig",
+  social: "inklusion",
+  feedPosts: [
+{
+      username: "elara_01",
+profileImg: "profilbildnatur2.png",
+      img: "naturbild.png",
+      likes: 73,
+	caption: "good vibes✨",
+      comments: [
+  { user: "travel.leo", text: "Was für eine Aussicht 😍" }
+]
+    },
+    {
+      username: "lena.travels",
+profileImg: "Profilbild1NATUR.png",
+      img: "IMG_1592.jpeg",
+      likes: 18,
+      caption: "Sonnenuntergang unter den Bäumen 🌅",
+      comments: [
+        { user: "paul.photo", text: "Mega Stimmung!" }
+      ]
+    },
+    {
+      username: "max.foodie",
+profileImg: "Profilbild2NATUR.png",
+      img: "IMG_1591.jpeg",
+      likes: 23,
+      caption: "Brunch Goals 🥞🍓",
+      comments: [
+        { user: "jonas.reist", text: "Brunch Goals" }
+      ]
+    },
+{
+username: "Franz0609",
+profileImg: "profilbildnatur1.png",
+      img: "niagara.png",
+      likes: 73,
+      caption: "America: first stop - Niagara falls",
+      comments: [
+        { user: "Andrea.kxd", text: "Ich wollte auch schon immer dort hin!" }
+      ]
+    },
+    {
+      username: "julia.nature",
+profileImg: "Profilbil3NATUR.png",
+      img: "IMG_1590.jpeg",
+      likes: 40,
+      caption: "Mein Lieblingsplatz 🌿💧",
+      comments: [
+        { user: "maria.lifestyle", text: "Was für ein Ort! 🌿" }
+      ]
+    }
+  ],
+  selfMaxLikes: 300,
+  selfComments: [
+    { name: "lisa.re",      text: "Wow, du strahlst! 😍" },
+    { name: "_mariaaa_",    text: "Wunderschönes Bild!" },
+    { name: "leon__",       text: "Du siehst toll aus 🔥" },
+    { name: "Julia.flr",    text: "Traumhafte Aussicht!" },
+    { name: "hannes98",     text: "Richtig cool" },
+    { name: "svenja.photo", text: "So ein schönes Lächeln!" },
+    { name: "luisa.reist",  text: "Arizona steht dir gut 😄" },
+    { name: "martin.lk",    text: "Wo seid ihr genau gewesen?" },
+    { name: "lara123",      text: "Ich will auch dahin 😍" },
+    { name: "franz.x",      text: "Mega Bild!" }
+  ],
+  selfCommentsCount: 8
+},
 
-  // 4) neutral, viel Likes, Inklusion
-  {
-    id: "neutral_viel_inklusion",
-    style: "neutral",
-    likesLevel: "viel",
-    social: "inklusion",
-    feedPosts: [
-      {
-        username: "lena.travels",
-        profileImg: "Profilbild1NATUR.png",
-        img: "IMG_1592.jpeg",
-        likes: 307,
-        caption: "Sonnenuntergang unter den Bäumen 🌅",
-        comments: [
-          { user: "anna.smile",  text: "Traumhaftes Licht 🌅" },
-          { user: "paul.photo",  text: "Mega Stimmung!" },
-          { user: "laura.life",  text: "Ich liebe solche Farben 😍" },
-          { user: "sofia.loves", text: "Wunderschönes Bild ❤️" },
-          { user: "felix.food",  text: "Da will man sofort hin!" },
-          { user: "carla.dreams",text: "So schön eingefangen!" }
-        ]
-      },
-      {
-        username: "max.foodie",
-        profileImg: "Profilbild2NATUR.png",
-        img: "IMG_1591.jpeg",
-        likes: 230,
-        caption: "Brunch Goals 🥞🍓",
-        comments: [
-          { user: "ben.adventures", text: "Das sieht köstlich aus 😋" },
-          { user: "tina.sunny",     text: "Wo gibt’s das?!" },
-          { user: "jonas.reist",    text: "Brunch Goals 🥞" },
-          { user: "nico.fitness",   text: "Cheat Day approved 😅" },
-          { user: "lena.travels",   text: "Ich liebe Pancakes 😍" }
-        ]
-      },
-      {
-        username: "julia.nature",
-        profileImg: "Profilbild3NATUR.png",
-        img: "IMG_1590.jpeg",
-        likes: 1300,
-        caption: "Mein Lieblingsplatz 🌿💧",
-        comments: [
-          { user: "maria.lifestyle", text: "Was für ein Ort! 🌿" },
-          { user: "leo.art",         text: "Natur pur 😍" },
-          { user: "tina.sunny",      text: "Ich höre die Vögel zwitschern 🕊️" },
-          { user: "jonas.reist",     text: "Da würde ich jetzt gerne spazieren!" },
-          { user: "carla.dreams",    text: "So beruhigend ✨" },
-          { user: "anna.smile",      text: "Deine Bilder sind immer so schön!" },
-          { user: "paul.photo",      text: "Perfekter Moment!" }
-        ]
-      }
-    ],
-    selfMaxLikes: 300,
-    selfComments: [
-      { name: "lisa.re",      text: "Wow, du strahlst! 😍" },
-      { name: "_mariaaa_",    text: "Wunderschönes Bild!" },
-      { name: "leon__",       text: "Du siehst toll aus 🔥" },
-      { name: "Julia.flr",    text: "Traumhafte Aussicht!" },
-      { name: "hannes98",     text: "Richtig cool" },
-      { name: "svenja.photo", text: "So ein schönes Lächeln!" },
-      { name: "luisa.reist",  text: "Arizona steht dir gut 😄" },
-      { name: "martin.lk",    text: "Wo seid ihr genau gewesen?" },
-      { name: "lara123",      text: "Ich will auch dahin 😍" },
-      { name: "franz.x",      text: "Mega Bild!" }
-    ],
-    selfCommentsCount: 8
-  },
+// 4) neutral, viel Likes, Inklusion  👉 wieder lange Liste
+{
+  id: "neutral_viel_inklusion",
+  style: "neutral",
+  likesLevel: "viel",
+  social: "inklusion",
+  feedPosts: [
+{
+      username: "elara_01",
+profileImg: "profilbildnatur2.png",
+      img: "naturbild.png",
+      likes: 639,
+	caption: "good vibes✨",
+      comments: [
+  { user: "travel.leo", text: "Was für eine Aussicht 😍" },
+  { user: "explore.julia", text: "Ich will sofort dahin 🥹" },
+  { user: "nature.tom", text: "Einfach pure Ruhe 💙" },
+  { user: "wander.lena", text: "Das sieht aus wie ein Traum ✨" },
+  { user: "photo.max", text: "Unglaubliches Licht 📸🔥" },
+  { user: "adventure.sara", text: "Perfekter Spot zum Abschalten 🌿" }
+]
+    },
+    {
+      username: "lena.travels",
+profileImg: "Profilbild1NATUR.png",
+      img: "IMG_1592.jpeg",
+      likes: 307,
+      caption: "Sonnenuntergang unter den Bäumen 🌅",
+      comments: [
+        { user: "anna.smile",  text: "Traumhaftes Licht 🌅" },
+        { user: "paul.photo",  text: "Mega Stimmung!" },
+        { user: "laura.life",  text: "Ich liebe solche Farben 😍" },
+        { user: "sofia.loves", text: "Wunderschönes Bild ❤️" },
+        { user: "felix.food",  text: "Da will man sofort hin!" },
+        { user: "carla.dreams",text: "So schön eingefangen!" }
+      ]
+    },
+    {
+      username: "max.foodie",
+profileImg: "Profilbild2NATUR.png",
+      img: "IMG_1591.jpeg",
+      likes: 230,
+      caption: "Brunch Goals 🥞🍓",
+      comments: [
+        { user: "ben.adventures", text: "Das sieht köstlich aus 😋" },
+        { user: "tina.sunny",     text: "Wo gibt’s das?!" },
+        { user: "jonas.reist",    text: "Brunch Goals 🥞" },
+        { user: "nico.fitness",   text: "Cheat Day approved 😅" },
+        { user: "lena.travels",   text: "Ich liebe Pancakes 😍" }
+      ]
+    },
+{
+      username: "Franz0609",
+profileImg: "profilbildnatur1.png",
+      img: "niagara.png",
+      likes: 639,
+      caption: "America: first stop - Niagara falls",
+      comments: [
+  { user: "Andrea.kxd", text: "Ich wollte auch schon immer dort hin!" },
+  { user: "explore.maya", text: "Steht ganz oben auf meiner Bucket List ✈️" },
+  { user: "urban.nico", text: "Mega Aufnahme! 🔥" },
+  { user: "nature.sophie", text: "Diese Wassermassen sind einfach beeindruckend 💙" },
+  { user: "wanderlust.jan", text: "Da bekommt man direkt Fernweh 😍" },
+  { user: "photography.elias", text: "Perfektes Timing mit dem Licht! 📸✨" }
+]
+    },
+    {
+      username: "julia.nature",
+profileImg: "Profilbild3NATUR.png",
+      img: "IMG_1590.jpeg",
+      likes: 1300,
+      caption: "Mein Lieblingsplatz 🌿💧",
+      comments: [
+        { user: "maria.lifestyle", text: "Was für ein Ort! 🌿" },
+        { user: "leo.art",         text: "Natur pur 😍" },
+        { user: "tina.sunny",      text: "Ich höre die Vögel zwitschern 🕊️" },
+        { user: "jonas.reist",     text: "Da würde ich jetzt gerne spazieren!" },
+        { user: "carla.dreams",    text: "So beruhigend ✨" },
+        { user: "anna.smile",      text: "Deine Bilder sind immer so schön!" },
+        { user: "paul.photo",      text: "Perfekter Moment!" }
+      ]
+    }
+  ],
+  selfMaxLikes: 300,
+  selfComments: [
+    { name: "lisa.re",      text: "Wow, du strahlst! 😍" },
+    { name: "_mariaaa_",    text: "Wunderschönes Bild!" },
+    { name: "leon__",       text: "Du siehst toll aus 🔥" },
+    { name: "Julia.flr",    text: "Traumhafte Aussicht!" },
+    { name: "hannes98",     text: "Richtig cool" },
+    { name: "svenja.photo", text: "So ein schönes Lächeln!" },
+    { name: "luisa.reist",  text: "Arizona steht dir gut 😄" },
+    { name: "martin.lk",    text: "Wo seid ihr genau gewesen?" },
+    { name: "lara123",      text: "Ich will auch dahin 😍" },
+    { name: "franz.x",      text: "Mega Bild!" }
+  ],
+  selfCommentsCount: 8
+},
+
 
   // 5) idealisiert, wenig Likes, Exklusion
   {
@@ -312,9 +414,20 @@ profileImg: "Profilbild3NATUR.png",
     likesLevel: "wenig",
     social: "exklusion",
     feedPosts: [
+{
+      username: "elara_01",
+profileImg: "profilbildlocken.png",
+      img: "idealisierte frau 3.png",
+      likes: 73,
+	caption: "good vibes✨",
+      comments: [
+  { user: "travel.leo", text: "Du siehst wunderschön aus 😍" }
+]
+    },
+
       {
         username: "lena.travels",
-        profileImg: "Profilbild1.png",
+profileImg: "Profilbild1.png",
         img: "idealisierte Frau 2.png",
         likes: 18,
         caption: "gym girly❤️",
@@ -324,7 +437,7 @@ profileImg: "Profilbild3NATUR.png",
       },
       {
         username: "max.foodie",
-        profileImg: "Profilbild2.png",
+profileImg: "Profilbild2.png",
         img: "idealisierter Mann 2.png",
         likes: 23,
         caption: "Sei dir Selbst am nähesten. #deepthoughts",
@@ -332,9 +445,19 @@ profileImg: "Profilbild3NATUR.png",
           { user: "jonas.reist", text: "Stark" }
         ]
       },
+{
+username: "Franz0609",
+profileImg: "Profilbild5.png",
+      img: "idealisierter Mann4.png",
+      likes: 73,
+      caption: "Clean look today ✨",
+      comments: [
+        { user: "Andrea.kxd", text: "Starker Look 🔥" }
+      ]
+    },
       {
         username: "julia.nature",
-        profileImg: "Profilbild3.png",
+profileImg: "Profilbild3.png",
         img: "Paarbild 2.png",
         likes: 40,
         caption: "Unser Lieblingsplatz",
@@ -350,16 +473,31 @@ profileImg: "Profilbild3NATUR.png",
     selfCommentsCount: 1
   },
 
-  // 6) idealisiert, viel Likes, Exklusion
+  // 6) idealisiert, viel Likes, Exklusion  (mit LANGER Kommentar-Liste)
   {
     id: "idealisiert_viel_exklusion",
     style: "idealisiert",
     likesLevel: "viel",
     social: "exklusion",
     feedPosts: [
+{
+      username: "elara_01",
+profileImg: "profilbildlocken.png",
+      img: "idealisierte frau 3.png",
+      likes: 639,
+	caption: "good vibes✨",
+      comments: [
+  { user: "travel.leo", text: "Du siehst wunderschön aus 😍" },
+  { user: "explore.julia", text: "Diese Haare omg 🔥" },
+  { user: "nature.tom", text: "So eine natürliche Schönheit 💛" },
+  { user: "wander.lena", text: "Mega schönes Portrait 📸" },
+  { user: "photo.max", text: "Dieses Lächeln 🥹✨" },
+  { user: "adventure.sara", text: "Einfach wow 😍" }
+]
+    },
       {
         username: "lena.travels",
-        profileImg: "Profilbild1.png",
+profileImg: "Profilbild1.png",
         img: "idealisierte Frau 2.png",
         likes: 307,
         caption: "gym girly❤️",
@@ -374,7 +512,7 @@ profileImg: "Profilbild3NATUR.png",
       },
       {
         username: "max.foodie",
-        profileImg: "Profilbild2.png",
+profileImg: "Profilbild2.png",
         img: "idealisierter Mann 2.png",
         likes: 230,
         caption: "Sei dir Selbst am nähesten. #deepthoughts",
@@ -386,9 +524,24 @@ profileImg: "Profilbild3NATUR.png",
           { user: "lena.freja",     text: "schönen Urlaub noch" }
         ]
       },
+{
+      username: "Franz0609",
+profileImg: "Profilbild5.png",
+      img: "idealisierter Mann4.png",
+      likes: 639,
+      caption: "Clean look today ✨",
+comments: [
+  { user: "Andrea.kxd", text: "Starker Look 🔥" },
+  { user: "explore.maya", text: "Das Outfit steht dir mega 😍" },
+  { user: "urban.nico", text: "Bruder, richtig fresh 💯" },
+  { user: "nature.sophie", text: "So ein sympathisches Lächeln 😊" },
+  { user: "wanderlust.jan", text: "Richtig gutes Profilbild 📸" },
+  { user: "photography.elias", text: "Die Farben passen perfekt zusammen 👌" }
+]
+    },
       {
         username: "julia.nature",
-        profileImg: "Profilbild3.png",
+profileImg: "Profilbild3.png",
         img: "Paarbild 2.png",
         likes: 1300,
         caption: "Unser Lieblingsplatz",
@@ -417,9 +570,20 @@ profileImg: "Profilbild3NATUR.png",
     likesLevel: "wenig",
     social: "inklusion",
     feedPosts: [
+{
+      username: "elara_01",
+profileImg: "profilbildlocken.png",
+      img: "idealisierte frau 3.png",
+      likes: 73,
+	caption: "good vibes✨",
+      comments: [
+  { user: "travel.leo", text: "Du siehst wunderschön aus 😍" }
+]
+    },
+
       {
         username: "lena.travels",
-        profileImg: "Profilbild1.png",
+profileImg: "Profilbild1.png",
         img: "idealisierte Frau 2.png",
         likes: 18,
         caption: "gym girly❤️",
@@ -429,7 +593,7 @@ profileImg: "Profilbild3NATUR.png",
       },
       {
         username: "max.foodie",
-        profileImg: "Profilbild2.png",
+profileImg: "Profilbild2.png",
         img: "idealisierter Mann 2.png",
         likes: 23,
         caption: "Sei dir Selbst am nähesten. #deepthoughts",
@@ -437,9 +601,19 @@ profileImg: "Profilbild3NATUR.png",
           { user: "jonas.reist", text: "Stark" }
         ]
       },
+{
+username: "Franz0609",
+profileImg: "Profilbild5.png",
+      img: "idealisierter Mann4.png",
+      likes: 73,
+      caption: "Clean look today ✨",
+      comments: [
+        { user: "Andrea.kxd", text: "Starker Look 🔥" }
+      ]
+    },
       {
         username: "julia.nature",
-        profileImg: "Profilbild3.png",
+profileImg: "Profilbild3.png",
         img: "Paarbild 2.png",
         likes: 40,
         caption: "Unser Lieblingsplatz",
@@ -464,16 +638,31 @@ profileImg: "Profilbild3NATUR.png",
     selfCommentsCount: 8
   },
 
-  // 8) idealisiert, viel Likes, Inklusion
+  // 8) idealisiert, viel Likes, Inklusion  (lange Kommentar-Liste)
   {
     id: "idealisiert_viel_inklusion",
     style: "idealisiert",
     likesLevel: "viel",
     social: "inklusion",
     feedPosts: [
+{
+      username: "elara_01",
+profileImg: "profilbildlocken.png",
+      img: "idealisierte frau 3.png",
+      likes: 639,
+	caption: "good vibes✨",
+      comments: [
+  { user: "travel.leo", text: "Du siehst wunderschön aus 😍" },
+  { user: "explore.julia", text: "Diese Haare omg 🔥" },
+  { user: "nature.tom", text: "So eine natürliche Schönheit 💛" },
+  { user: "wander.lena", text: "Mega schönes Portrait 📸" },
+  { user: "photo.max", text: "Dieses Lächeln 🥹✨" },
+  { user: "adventure.sara", text: "Einfach wow 😍" }
+]
+    },
       {
         username: "lena.travels",
-        profileImg: "Profilbild1.png",
+profileImg: "Profilbild1.png",
         img: "idealisierte Frau 2.png",
         likes: 307,
         caption: "gym girly❤️",
@@ -488,7 +677,7 @@ profileImg: "Profilbild3NATUR.png",
       },
       {
         username: "max.foodie",
-        profileImg: "Profilbild2.png",
+profileImg: "Profilbild2.png",
         img: "idealisierter Mann 2.png",
         likes: 230,
         caption: "Sei dir Selbst am nähesten. #deepthoughts",
@@ -500,9 +689,24 @@ profileImg: "Profilbild3NATUR.png",
           { user: "lena.freja",     text: "schönen Urlaub noch" }
         ]
       },
+{
+      username: "Franz0609",
+profileImg: "Profilbild5.png",
+      img: "idealisierter Mann4.png",
+      likes: 639,
+      caption: "Clean look today ✨",
+comments: [
+  { user: "Andrea.kxd", text: "Starker Look 🔥" },
+  { user: "explore.maya", text: "Das Outfit steht dir mega 😍" },
+  { user: "urban.nico", text: "Bruder, richtig fresh 💯" },
+  { user: "nature.sophie", text: "So ein sympathisches Lächeln 😊" },
+  { user: "wanderlust.jan", text: "Richtig gutes Profilbild 📸" },
+  { user: "photography.elias", text: "Die Farben passen perfekt zusammen 👌" }
+]
+    },
       {
         username: "julia.nature",
-        profileImg: "Profilbild3.png",
+profileImg: "Profilbild3.png",
         img: "Paarbild 2.png",
         likes: 1300,
         caption: "Unser Lieblingsplatz",
